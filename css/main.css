@@ -264,14 +264,14 @@
 }
 
 .section-graphics-3 .img-container__1 {
-  background: url(/dist/images/desktop/image-graphic-design.jpg);
+  background: url(/images/desktop/image-graphic-design.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .section-graphics-3 .img-container__2 {
-  background: url(/dist/images/desktop/image-photography.jpg);
+  background: url(/images/desktop/image-photography.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
