@@ -1,0 +1,78 @@
+@import "./config";
+@import "./header";
+@import "./graphics";
+@import "./testimonials";
+@import "./gallery";
+@import "./mediaqueries";
+
+header {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: url(../images/desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  overflow: hidden;
+  padding: 4rem 0;
+  background-color: hsl(167, 44%, 69%);
+
+  .footer-logo {
+    margin-bottom: 2.5rem;
+    width: 180px;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(13%) saturate(2008%)
+      hue-rotate(116deg) brightness(93%) contrast(93%);
+  }
+}
+
+.nav-links {
+  list-style: none;
+  margin-bottom: 5.5rem;
+
+  li {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      font-family: $font-family-barlow;
+      color: rgba($primary-cyan-dk-desat, 0.7);
+      @include transition;
+
+      &:active,
+      &:hover {
+        color: $neutral-white;
+      }
+    }
+
+    &:nth-child(2) {
+      margin: 0 3.5rem;
+    }
+  }
+}
+
+.social-links {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin: 0 0.75rem;
+
+    a {
+      text-decoration: none;
+      color: rgba($primary-cyan-dk-desat, 0.87);
+      font-size: 23px;
+      @include transition;
+
+      &:active,
+      &:hover {
+        color: $neutral-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.section-graphics {
+  display: flex;
+  overflow: hidden;
+
+  .text-box {
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    h2 {
+      font-size: 2.7rem;
+      font-family: $font-family-fruances;
+      font-weight: 900;
+      color: $neutral-blue-dkr-desat;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: $font-family-barlow;
+      line-height: 1.7rem;
+      color: $neutral-blue-gray-dk;
+    }
+
+    a {
+      margin-top: 4rem;
+      text-decoration: none;
+      color: $neutral-blue-dkr-desat;
+      font-family: $font-family-fruances;
+      font-weight: 900;
+      font-size: 19px;
+      position: relative;
+      z-index: 1;
+      letter-spacing: 0.1rem;
+
+      &:after {
+        position: absolute;
+        left: -0.3rem;
+        bottom: -0.1rem;
+        border-radius: 30px;
+        content: "";
+        width: 10rem;
+        height: 0.65rem;
+        opacity: 0.4;
+        z-index: -1;
+        @include transition;
+      }
+      &:active::after,
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .img-container {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.section-graphics-1 {
+  .text-box {
+    a {
+      &:after {
+        background-color: $primary-yellow;
+      }
+    }
+  }
+}
+
+.section-graphics-2 {
+  .text-box {
+    a {
+      &:after {
+        background-color: $primary-red-lt;
+      }
+    }
+  }
+}
+
+.section-graphics-3 {
+  min-height: 80vh;
+  .img-container {
+    display: flex;
+    justify-content: baseline;
+    position: relative;
+
+    &__1 {
+      background: url(/dist/images/desktop/image-graphic-design.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__2 {
+      background: url(/dist/images/desktop/image-photography.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .overlap-text {
+      position: absolute;
+      bottom: 0rem;
+      width: 60%;
+      height: 33%;
+      text-align: center;
+      left: 20%;
+
+      h2 {
+        font-family: $font-family-fruances;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+        font-weight: 900;
+      }
+
+      p {
+        font-family: $font-family-barlow;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.overlap-text-1 {
+  color: $primary-cyan-dk-desat;
+}
+
+.overlap-text-2 {
+  color: $primary-blue-dk;
+}
